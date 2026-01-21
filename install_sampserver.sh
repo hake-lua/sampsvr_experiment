@@ -7,14 +7,15 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
+sudo apt update -y && sudo apt upgrade -y
+
 SAMP_USER="samp"
 WORKDIR="/home/$SAMP_USER"
 ARCHIVE_URL="https://raw.githubusercontent.com/hake-lua/default_sampsvr/refs/heads/main/samp03.tar.gz"
 PORT="7777"
 
 dpkg --add-architecture i386
-apt update -y
-apt install -y libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 \
+apt install -y libc6:i386 libncurses6:i386 libstdc++6:i386 lib32z1 \
                 lib32stdc++6 lib32gcc-s1 screen wget tar unzip ca-certificates curl
 
 if ! id "$SAMP_USER" &>/dev/null; then
