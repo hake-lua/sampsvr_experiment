@@ -78,10 +78,11 @@ if systemctl is-active --quiet samp; then
     echo -e " Konfiguracija: $WORKDIR/samp03/server.cfg"
     echo -e "=================================================="
     echo -e "\n--- UPRAVLJANJE SERVEROM ---"
-    echo -e " Restartuj server:  systemctl restart samp"
-    echo -e " Ugasi server:      systemctl stop samp"
-    echo -e " Upali server:      systemctl start samp"
+    echo -e " Restartuj server:  sudo systemctl restart samp"
+    echo -e " Ugasi server:      sudo systemctl stop samp"
+    echo -e " Upali server:      sudo systemctl start samp"
     echo -e "==================================================\n"
 else
     echo -e "\n[ERROR] Server nije uspio startati.\n"
 fi
+
