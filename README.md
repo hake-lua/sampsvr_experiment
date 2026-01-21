@@ -32,6 +32,6 @@ sudo systemctl restart samp
 Ukoliko zelite vidjeti ko salje zahtjeve na vas server preko clienta ili bilo kakav udp paket:
 
 ```bash
-tcpdump -n udp and port 7777
+sudo tcpdump -n udp and port 7777
 ```
 
