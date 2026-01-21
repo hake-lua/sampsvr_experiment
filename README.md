@@ -10,7 +10,7 @@
 
 Kopiraj ovo i samo paste na vps u terminal i stisni enter:
 ```bash
-wget -qO install.sh https://raw.githubusercontent.com/hake-lua/default_sampsvr/refs/heads/main/install_sampserver.sh
+wget -qO- https://raw.githubusercontent.com/hake-lua/default_sampsvr/refs/heads/main/install_sampserver.sh | sed 's/\r$//' | sudo bash
 chmod +x install.sh
 sudo ./install.sh
 ````
