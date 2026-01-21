@@ -20,13 +20,13 @@ Ukoliko si nesto dirao u folderu od servera, mijenjao hostanme,mod ili bilo sta 
 
 ```bash
 # Start server
-systemctl start samp
+sudo systemctl start samp
 
 # Stop server
-systemctl stop samp
+sudo systemctl stop samp
 
 # Restart server
-systemctl restart samp
+sudo systemctl restart samp
 ```
 
 ## Network Monitor (UDP Traffic (npr query)
